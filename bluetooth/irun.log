@@ -1,0 +1,36 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Nov 02, 2026 at 11:15:30 IST
+irun
+	-access +rwc
+	crc.sv
+	tb.sv
+file: crc.sv
+	module worklib.serial_crc24:sv
+		errors: 0, warnings: 0
+file: tb.sv
+	module worklib.tb_serial_crc24:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_serial_crc24
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.serial_crc24:sv <0x35871e9c>
+			streams:   7, words:  2070
+		worklib.tb_serial_crc24:sv <0x2ce9ad42>
+			streams:  17, words: 26215
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           24      24
+		Scalar wires:        10       -
+		Vectored wires:       5       -
+		Always blocks:        2       2
+		Initial blocks:       3       3
+		Cont. assignments:    4       5
+		Pseudo assignments:   9       9
+	Writing initial simulation snapshot: worklib.tb_serial_crc24:sv

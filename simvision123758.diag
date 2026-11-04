@@ -1,0 +1,206 @@
+*** Message Type: info ***
+When: Wed Nov 04 10:26:47 AM IST 2026
+SimVision started.
+Version: TOOL:  simvision(64)   20.09-s009
+User: vvtrainee43
+Host: compute-srv4.eda.atme.in
+Platform: Linux/x86_64/3.10.0-1160.66.1.el7.x86_64
+Started: Wed Nov 04 10:26:47 AM IST 2026
+Command: /tools/cadence_march2021/XCELIUM2009/tools.lnx86/simvision/bin/64bit/simvision.exe wave.shm/
+Work Directory: /home/vvtrainee43/Desktop/Blueetooth/bluetooth
+ 
+*** Message Type: info ***
+When: Wed Nov 04 10:26:48 AM IST 2026
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Nov 04 10:26:51 AM IST 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Nov 04 10:26:53 AM IST 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Nov 04 12:00:58 AM IST 2026
+Create source window: "Source Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Nov 04 12:01:03 AM IST 2026
+Delete source window: "Source Browser 1"
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:01:04 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-driver-simple condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-driver-simple} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action185" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action185 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action185 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action185)
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:01:04 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_auto-trace-driver-simple condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_auto-trace-driver-simple} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action186" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action186 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action186 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action186)
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:01:04 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-load condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-load} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action187" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action187 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action187 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action187)
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:01:04 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-load-simple condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-load-simple} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action188" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action188 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action188 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action188)
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:01:04 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-x-driver condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-x-driver} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action190" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action190 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action190 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action190)
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:00:02 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-x-load condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-x-load} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action191" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action191 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action191 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action191)
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:00:02 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-active-driver condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-active-driver} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action193" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action193 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action193 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action193)
+ 
+*** Message Type: error ***
+When: Wed Nov 04 12:00:02 AM IST 2026
+invalid command name "::SVSidebarManager::traceSignalsSidebar1"
+    while executing
+"::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-driver condition0"
+    (in namespace inscope "::TraceSignalsSidebar" script line 1)
+    invoked from within
+"namespace inscope ::TraceSignalsSidebar {::SVSidebarManager::traceSignalsSidebar1 _monitor_action_trace-driver} condition0"
+    ("eval" body line 1)
+    invoked from within
+"eval $monitorcmd [list $_monitor]"
+    (object "::action184" method "::action::Condition::_checkstate" body line 8)
+    invoked from within
+"::action184 _checkstate"
+    (in namespace inscope "::action::Condition" script line 1)
+    invoked from within
+"namespace inscope ::action::Condition {::action184 _checkstate}"
+    (while executing background task for duty "checkstate" in owner ::action184)
+ 
+*** Message Type: info ***
+When: Wed Nov 04 12:00:02 AM IST 2026
+Exit Simulator: user
+ 
+*** Message Type: info ***
+When: Wed Nov 04 12:00:02 AM IST 2026
+Connect to Simulator
+      Design: worklib.tb_serial_crc24:sv
+   Languages: verilog
+   Simulator: Xcelium ppe
+     Version: TOOL:    ippe(64)        20.09-s009
+        User: vvtrainee43
+        Host: compute-srv4.eda.atme.in
+Time Started: Wed Nov 04 12:01:02 AM IST 2026
+  Process ID: 80069
+   Directory: /home/vvtrainee43/Desktop/Blueetooth/bluetooth
+     Command: /tools/cadence_march2021/XCELIUM2009/tools.lnx86/simvision/bin/64bit/ippe.exe -nocopyright -nowarn DLNOCL -cdslib /home/vvtrainee43/Desktop/Blueetooth/bluetooth/./xcelium.d/run.lnx8664.20.09.d/cds.lib -snapshot worklib.tb_serial_crc24:sv -64
+
+ 
+*** Message Type: info ***
+When: Wed Nov 04 12:00:16 AM IST 2026
+Create source window: "Source Browser 2"
+ 

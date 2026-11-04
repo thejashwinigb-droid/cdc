@@ -1,0 +1,138 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set cursorctl-dont-show-sync-warning 1
+preferences set toolbar-Standard-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set whats-new-dont-show-at-startup 1
+
+#
+# Databases
+#
+database require wave -search {
+	./wave.shm/wave.trn
+	/home/sgeuser118/Desktop/bluetooth/wave.shm/wave.trn
+}
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1920x977+-1+27}] != ""} {
+    window geometry "Waveform 1" 1920x977+-1+27
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar select designbrowser
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ns \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.clk
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.rst_n
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.crc_out[23:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.dut.rx_crc_field[23:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.load_crc.initial_value[23:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.ref_crc_step.current_crc[23:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.ref_crc_step.data_bit
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.ref_crc_step.feedback
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.ref_crc_step.ref_crc_step[23:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.ref_crc_step.shifted[23:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.send_bit.data_bit
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.send_bit.is_last
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.feedback
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.dut.next_crc[23:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.dut.preset_val[23:0]}
+	} ]
+set id [waveform add -signals  {
+	{wave::tb_serial_crc24.dut.shifted_crc[23:0]}
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.rx_compare_en
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.bit_en
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.crc_done
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.feedback
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.din
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.bit_en
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.rx_compare_en
+	} ]
+set id [waveform add -signals  {
+	wave::tb_serial_crc24.dut.rx_compare_en
+	} ]
+
+waveform xview limits 805ns 859ns
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 600x250+0+0
+
+#
+# Layout selection
+#
